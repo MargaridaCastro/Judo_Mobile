@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Algés e Dafundo</title>
+  <link rel="stylesheet" href="judo-mobile.css" />
+</head>
+<body>
+
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="logo">
+      <img src="mascote-judo.png" alt="Logo Judo" class="logo-img" />
+      <span>Judo</span>
+    </div>
+
+    <ul class="menu-list">
+       <li><a href="historia.html" class="menu-item">História</a></li>
+      <li><a href="regras.html" class="menu-item">Regras</a></li>
+      <li><a href="materiais.html" class="menu-item">Materiais Necessários</a></li>
+      <li>
+        <div class="menu-item" id="praticarBtn">Onde Praticar? ↓</div>
+        <ul class="submenu-list" id="praticarSubmenu">
+          <li><a href="carnaxide.html" class="submenu-item">Carnaxide</a></li>
+          <li><a href="alges.html" class="submenu-item">Sport Algés e Dafundo</a></li>
+          <li><a href="1dezembro.html" class="submenu-item">Grupo Musical 1º de Dezembro</a></li>
+        </ul>
+      </li>
+      <li><a href="beneficios.html" class="menu-item">Benefícios</a></li>
+    </ul>
+  </nav>
+   <script src="script.js"></script>
+
+  <main>
+    <div class="clube-info">
+      <h1>Onde Praticar?</h1>
+    </div>    
+    <div class="clube-info">
+        <img src="icons8-localização-94.png" class="clube-img">
+        <h3><strong>Sport Algés e Dafundo</strong></h3>
+    </div>
+
+    <div class="texto">
+      <p>➢ Av. Combatentes da Grande Guerra,88, 1495-035 Algés</p>
+      <p>➢ +351 214 118 660</p>
+      <p>➢ www.sportalgesedafundo.com</p>
+      <p><strong>Horários:</strong></p>
+    </div>
+
+    <div class="texto1">
+      <p>▪ 3ª e 5ª Feira ⭢ 18h00 às 18h45 (iniciação I – 3 aos 6 anos)</p>
+      <p>▪ 3ª e 5ª Feira ⭢ 18h00 às 18h45 (iniciação II – 7 aos 9 anos)</p>
+      <p>▪ 3ª e 5ª Feira ⭢ 19h00 às 19h45 (iniciação III – 10 aos 14 anos)</p>
+      <p>▪ 3ª e 5ª Feira ⭢ 19h00 às 20h00 (iniciação adultos)</p>
+      <p>▪ Entre outros horários para níveis mais avançados.</p>
+    </div>
+
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6225.517008747607!2d-9.22807440738326!3d38.702157065249584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193367e4a89ed1%3A0x2a3fbd792bbdc9f7!2sAv.%20Combatentes%20da%20Grande%20Guerra%2088%2C%201495-035%20Alg%C3%A9s!5e0!3m2!1spt-PT!2spt!4v1714928306675!5m2!1spt-PT!2spt" 
+        width="100%" 
+        height="300" 
+        style="border:0; border-radius: 10px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+
+  <script>
+    const submenuToggle = document.querySelector('.submenu-toggle');
+    submenuToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  </script>
+  
+<main>
+<div class="container">
+        <form class="avaliar">
+            <h2>Avalie o espaço</h2>
+
+            
+            <label for="rating">Classificação:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Muito bom</option>
+                <option value="3">3 - Bom</option>
+                <option value="2">2 - Suficiente</option>
+                <option value="1">1 - Negativo</option>
+            </select>
+
+            <label for="review">Avaliação:</label>
+            <textarea id="review" name="review" rows="4" placeholder="Escreva a sua avaliação aqui..." required></textarea>
+
+            <button type="submit">Submeter avaliação</button>
+        </form>
+ </main>
+
+<footer>
+    <div class="footer footer-icons">
+         <span><a href="index.html">🏆</a></span>
+        <span><a href="perfil.html">👤</a></span>
+    </div>
+</footer>
+
+</body>
+</html>
+
+

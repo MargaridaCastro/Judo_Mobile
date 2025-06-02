@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Responsivo</title>
+  <link rel="stylesheet" href="judo-mobile.css" />
+</head>
+<body class="inicio">
+
+    <div class="main-content">
+        <div id="noticias" class="container-noticias"></div>
+    </div>
+    
+ <div id="loading-screen">
+  <div class="loader-wrapper">
+    <div class="circle-rotating"></div>
+    <img src="mascote-judo.png" alt="Mascote Judo" class="loader-mascote" />
+    <div class="loader-text" id="loading-text"></div>
+  </div>
+</div>
+
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="logo">
+      <img src="mascote-judo.png" alt="Logo Judo" class="logo-img" />
+      <span>Judo</span>
+    </div>
+
+    <ul class="menu-list">
+       <li><a href="historia.html" class="menu-item">História</a></li>
+      <li><a href="regras.html" class="menu-item">Regras</a></li>
+      <li><a href="materiais.html" class="menu-item">Materiais Necessários</a></li>
+      <li>
+        <div class="menu-item" id="praticarBtn">Onde Praticar? ↓</div>
+        <ul class="submenu-list" id="praticarSubmenu">
+          <li><a href="carnaxide.html" class="submenu-item">Carnaxide</a></li>
+          <li><a href="alges.html" class="submenu-item">Sport Algés e Dafundo</a></li>
+          <li><a href="1dezembro.html" class="submenu-item">Grupo Musical 1º de Dezembro</a></li>
+        </ul>
+      </li>
+      <li><a href="beneficios.html" class="menu-item">Benefícios</a></li>
+    </ul>
+  </nav>
+   <script src="judo-mobile.js"></script>
+   <script src="script.js"></script>
+
+  <footer>
+  <div class="footer footer-icons">
+      <span><a href="index.html">🏆</a></span>
+      <span><a href="perfil.html" id="perfil-link" title="Ver Perfil">👤</a></span>
+  </div>
+</footer>
+
+  <script>
+       const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(item => {
+      item.addEventListener('click', function () {
+        menuItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouch) {
+    const submenuItems = document.querySelector('.submenu-item');
+    submenuItems.addEventListener('onclick', function (e) {
+    submenuItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+  });
+}
+  </script>
+  
+</body class="inicio">
+</html>
+
+
+
+
+
+
+
+

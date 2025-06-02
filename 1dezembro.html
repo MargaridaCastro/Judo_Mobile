@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>História do Judo</title>
+  <link rel="stylesheet" href="judo-mobile.css" />
+</head>
+<body>
+
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="logo">
+      <img src="mascote-judo.png" alt="Logo Judo" class="logo-img" />
+      <span>Judo</span>
+    </div>
+
+    <ul class="menu-list">
+       <li><a href="historia.html" class="menu-item">História</a></li>
+      <li><a href="regras.html" class="menu-item">Regras</a></li>
+      <li><a href="materiais.html" class="menu-item">Materiais Necessários</a></li>
+      <li>
+        <div class="menu-item" id="praticarBtn">Onde Praticar? ↓</div>
+        <ul class="submenu-list" id="praticarSubmenu">
+          <li><a href="carnaxide.html" class="submenu-item">Carnaxide</a></li>
+          <li><a href="alges.html" class="submenu-item">Sport Algés e Dafundo</a></li>
+          <li><a href="1dezembro.html" class="submenu-item">Grupo Musical 1º de Dezembro</a></li>
+        </ul>
+      </li>
+      <li><a href="beneficios.html" class="menu-item">Benefícios</a></li>
+    </ul>
+  </nav>
+   <script src="script.js"></script>
+    </nav>
+ 
+  <main>
+    <div class="clube-info">
+      <h1>Onde Praticar?</h1>
+    </div>    
+    <div class="clube-info">
+        <img src="icons8-localização-94.png" class="clube-img">
+        <h3><strong>Grupo musical 1º de Dezembro</strong></h3>
+    </div>
+
+    <div class="texto">
+    <div class="texto">
+    <p>➢ Rua Quinta do Bonfim, 4B, 2790-404 Queijas</p>
+    <p>➢ +351 218 222 535/+351 912 799 493</p>
+    <p>➢ gm@1dezembroqueijas.blogspot.com</p>
+    <p><strong>Horários:</strong></p>
+    <div class="texto1">
+        <p>▪ 3ª e 5ª Feira ⭢ 19h00 às 19h45 (5 aos 11 anos)</p>
+    </div>
+    <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6219.754282300512!2d-9.259111212272073!3d38.71755816945157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193391bcd01611%3A0x6b10bcf48923ce9c!2sR.%20Quinta%20do%20Bonfim%204B%2C%202790-404%20Queijas!5e0!3m2!1spt-PT!2spt!4v1714928500485!5m2!1spt-PT!2spt" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+ </main>
+
+ <main>
+  <div class="container">
+        <form class="avaliar">
+            <h2>Avalie o espaço</h2>
+
+            <label for="rating">Classificação:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Muito bom</option>
+                <option value="3">3 - Bom</option>
+                <option value="2">2 - Suficiente</option>
+                <option value="1">1 - Negativo</option>
+            </select>
+
+            <label for="review">Avaliação:</label>
+            <textarea id="review" name="review" rows="4" placeholder="Escreva a sua avaliação aqui..." required></textarea>
+
+            <button type="submit">Submeter avaliação</button>
+        </form>
+ </main>
+
+ <footer>
+    <div class="footer footer-icons">
+         <span><a href="index.htmll">🏆</a></span>
+        <span><a href="perfil.html">👤</a></span>
+    </div>
+</footer>
+
+</body>
+</html>

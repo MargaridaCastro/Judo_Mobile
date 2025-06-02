@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil</title>
+  <link rel="stylesheet" href="judo-mobile.css" />
+  <style>
+
+header h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+ 
+.perfil-section {
+      margin-bottom: 20px;
+    }
+
+.perfil-section h2 {
+      margin-bottom: 10px;
+    }
+
+.perfil-container {
+    max-width: 600px;
+    margin: 10px auto; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.edit-profile,
+.opinions-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+  }
+    
+.profile-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+
+.edit-profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-profile input,
+.edit-profile textarea,
+.opinions-box {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 8px; 
+}
+
+.edit-profile label {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    font-size: 0.95rem;
+ }
+
+
+.opinions-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opinions-box {
+    height: 120px;
+    resize: vertical;
+  }
+  
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+
+<body>
+
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="logo">
+      <img src="mascote-judo.png" alt="Logo Judo" class="logo-img" />
+      <span>Judo</span>
+    </div>
+
+    <ul class="menu-list">
+       <li><a href="historia.html" class="menu-item">História</a></li>
+      <li><a href="regras.html" class="menu-item">Regras</a></li>
+      <li><a href="materiais.html" class="menu-item">Materiais Necessários</a></li>
+      <li>
+  <div class="menu-item" id="praticarBtn">Onde Praticar? ↓</div>
+  <ul class="submenu-list" id="praticarSubmenu">
+    <li><a href="carnaxide.html" class="submenu-item">Carnaxide</a></li>
+    <li><a href="alges.html" class="submenu-item">Sport Algés e Dafundo</a></li>
+    <li><a href="1dezembro.html" class="submenu-item">Grupo Musical 1º de Dezembro</a></li>
+  </ul>
+</li>
+      <li><a href="beneficios.html" class="menu-item">Benefícios</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>O meu perfil</h1>
+  </header>
+
+  <section class="perfil-container">
+       <div class="edit-profile">
+      <h2>Editar Perfil</h2>
+      <img src="perfil-padrao.png" alt="Foto de Perfil" id="fotoPerfil" class="profile-image" />
+      
+      <label for="nomeInput">Nome:</label>
+      <input type="text" id="nomeInput" placeholder="O seu nome" />
+
+      <label for="fotoInput">Escolher foto:</label>
+      <input type="file" id="fotoInput" accept="image/*" />
+
+      <button onclick="salvarPerfil()">Salvar Perfil</button>
+    </div>
+
+    <div class="opinions-section">
+      <h2>Opiniões</h2>
+      <textarea class="opinions-box" id="opinions" placeholder="Escreva as suas opiniões aqui..."></textarea>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer footer-icons">
+      <span><a href="index.html">🏆</a></span>
+      <span><a href="perfil.html" id="perfil-link" title="Ver Perfil">👤</a></span>
+    </div>
+  </footer>
+
+  <script>
+    function salvarPerfil() {
+      const nome = document.getElementById('nomeInput').value;
+      const opinions = document.getElementById('opinions').value;
+      const fotoInput = document.getElementById('fotoInput');
+      const foto = document.getElementById('fotoPerfil');
+
+      
+      alert(`Perfil salvo!\nNome: ${nome}\nOpiniões: ${opinions}`);
+
+    
+      if (fotoInput.files && fotoInput.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          foto.src = e.target.result;
+        }
+        reader.readAsDataURL(fotoInput.files[0]);
+      }
+    }
+  </script>
+<script src="script.js"></script>
+</body>
+</html>

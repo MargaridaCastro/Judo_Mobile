@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>História do Judo</title>
+  <link rel="stylesheet" href="judo-mobile.css" />
+</head>
+<body>
+
+  <nav class="menu">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <div class="logo">
+      <img src="mascote-judo.png" alt="Logo Judo" class="logo-img" />
+      <span>Judo</span>
+    </div>
+
+    <ul class="menu-list">
+       <li><a href="historia.html" class="menu-item">História</a></li>
+      <li><a href="regras.html" class="menu-item">Regras</a></li>
+      <li><a href="materiais.html" class="menu-item">Materiais Necessários</a></li>
+      <li>
+        <div class="menu-item" id="praticarBtn">Onde Praticar? ↓</div>
+        <ul class="submenu-list" id="praticarSubmenu">
+          <li><a href="carnaxide.html" class="submenu-item">Carnaxide</a></li>
+          <li><a href="alges.html" class="submenu-item">Sport Algés e Dafundo</a></li>
+          <li><a href="1dezembro.html" class="submenu-item">Grupo Musical 1º de Dezembro</a></li>
+        </ul>
+      </li>
+      <li><a href="beneficios.html" class="menu-item">Benefícios</a></li>
+    </ul>
+  </nav>
+   <script src="script.js"></script>
+
+ <main>
+    <div class="clube-info">
+        
+        <h1>Onde Praticar?</h1>
+    </div>    
+    <div class="clube-info">
+        <img src="icons8-localização-94.png" class="clube-img">
+        <h3><strong>Clube de Carnaxide de Cultura e Desporto</strong></h3>
+    </div>
+    <div class="texto">
+    <p>➢ Rua Aquilino Ribeiro, 18, 2790-027 Carnaxide</p>
+    <p>➢ +351 214 170 061/+351 934 170 027</p>
+    <p>➢ www.clubedecarnaxide.pt</p>
+    <p><strong>Horários:</strong></p>
+        <div class="texto1">
+        <p>▪ 4ª Feira ⭢ 18h10 às 18h55 (judo I)</p>
+        <p>▪ 4ª Feira ⭢ 18h55 às 19h40 (judo II)</p>
+        <p>▪ 4ª Feira ⭢ 19h40 às 20h30 (judo I)</p>
+        <p>▪ 6ª Feira ⭢ 17h00 às 17h45 (judo I)</p>
+        <p>▪ 6ª Feira ⭢ 17h45 às 18h30 (judo I)</p>
+        <p>▪ 6ª Feira ⭢ 18h30 às 19h15 (judo II)</p>
+        <p>▪ 6ª Feira ⭢ 19h15 às 20h30 (judo II)</p>
+    </div>
+    <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.509953305695!2d-9.2421237!3d38.7239296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932ad1e3b89d5%3A0x47aeabe85d1a6c56!2sR.%20Aquilino%20Ribeiro%2018%2C%202790-027%20Carnaxide%2C%20Portugal!5e0!3m2!1spt-PT!2spt!4v1714927453562!5m2!1spt-PT!2spt" 
+          width="100%" 
+          height="300" 
+          style="border:0; border-radius: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+ </main>
+
+ <main>
+ <div class="container">
+        <form class="avaliar">
+            <h2>Avalie o espaço</h2>
+
+            
+            <label for="rating">Classificação:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Muito bom</option>
+                <option value="3">3 - Bom</option>
+                <option value="2">2 - Suficiente</option>
+                <option value="1">1 - Negativo</option>
+            </select>
+
+            <label for="review">Avaliação:</label>
+            <textarea id="review" name="review" rows="4" placeholder="Escreva a sua avaliação aqui..." required></textarea>
+
+            <button type="submit">Submeter avaliação</button>
+        </form>
+ </main>
+
+<footer>
+    <div class="footer footer-icons">
+         <span><a href="index.html">🏆</a></span>
+        <span><a href="perfil.html">👤</a></span>
+    </div>
+</footer>
+
+</body>
+</html>
